@@ -1,4 +1,6 @@
-<p id="notice"></p>
+<p id="notice">
+   <%= notice %>
+</p>
 <p>
    <strong>Title:</strong>
    <%= @book.title %>
@@ -8,3 +10,7 @@
    <strong>Body:</strong>
    <%= @book.body %>
 </p>
+
+<%= link_to "edit", edit_book_path(@book) %>
+|
+<%= link_to "back", books_path %>
