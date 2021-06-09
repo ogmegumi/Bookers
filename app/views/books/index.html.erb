@@ -1,13 +1,11 @@
-<p id="notice"><% flash[:notice] %></p>
+<p id="notice"><%= flash[:notice] %></p>
 
 <h1>Books</h1>
 
 <table>
     <thead>
-       <th>
-           <th>Title</th>
-           <th>Body</th>
-       </th>
+       <th>Title</th>
+       <th>Body</th>
     </thead>
     <tbody>
     <% @books.each do |book| %>
@@ -34,7 +32,7 @@
        </ul>
       </div>
    <% end %>
-   
+
     <div class="field">
        <label for="book_title">Title</laber><br>
        <%= f.text_field :title %>
@@ -46,5 +44,5 @@
     <div class="actions">
        <%= f.submit 'Creat Book' %>
     </div>
-    
+
 <% end %>
